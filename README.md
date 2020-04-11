@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="./logo/flask.svg" width="200" height="200" alt="Sample logo" />
+  <img src="./logo/flask.svg" width="100" height="100" alt="Sample logo" />
 </p>
-<br/>
-
 
 # flask-session-pymongo
 
