@@ -1,4 +1,4 @@
-# flask session using pymongo
+# flask-session-pymongo
 
 로그인 없이 사용자를 구분하여 사용자 정보를 관리하는 방식을 `Session`이라는 개념을 통하여 구현해 보자.
 
