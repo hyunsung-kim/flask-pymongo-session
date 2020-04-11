@@ -26,7 +26,7 @@
 
 - Run server
     ```bash
-    (venv)$ python app.py
+    (venv)$ python src/app.py
     ```
 
 ## Contributor
