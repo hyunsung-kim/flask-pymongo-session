@@ -19,10 +19,15 @@
     $ source ./.venv/bin/activate
     ```
 
-- Install python packages
+- Install packages
     ```bash
     (venv)$ pip install -r requirements.txt
     ```
+    
+- Freeze packages
+  ```bash
+    (venv)$ pip freeze > requirements.txt
+  ```
 
 - Run server
     ```bash
