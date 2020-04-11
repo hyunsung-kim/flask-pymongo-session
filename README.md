@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo/flask.svg" alt="Sample logo" />
+  <img src="./logo/flask.svg" width="200" height="200" alt="Sample logo" />
 </p>
 <br/>
 
