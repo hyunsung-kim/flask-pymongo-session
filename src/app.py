@@ -1,4 +1,4 @@
-from flask import Flask, session
+from flask import Flask, session, render_template, make_response
 from uuid import uuid4
 from datetime import datetime, timedelta
 from flask.sessions import SessionInterface, SessionMixin
@@ -33,7 +33,7 @@ class MongoSessinoInterface(SessionInterface):
 
     def save_session(self, app, session, response):
         domain = self.get_cookie_domain(app)
-        if not session:
+        if session is None:
             response.delete_cookie(app.session_cookie_name, domain=domain)
             return
         if  self.get_expiration_time(app, session):
@@ -59,7 +59,10 @@ app.config.update(
 
 @app.route('/')
 def welcome():
-    return "Welcome to myproject"
+    res = make_response(render_template('index.html'))
+    res.set_cookie(app.session_cookie_name, session.sid)
+    return res
+    # return "Welcome to myproject"
 
 
 @app.route('/session_in')
